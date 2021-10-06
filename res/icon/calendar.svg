@@ -1,0 +1,7 @@
+<svg   width="16px"   height="16px"  viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>日历-16</title>
+    <g id="日历-16" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="矩形" x="0" y="0" width="16" height="16"></rect>
+        <path d="M6,0.015 L6,2.015 L10,2.015 L10,0.015 L12,0.015 L12,2.015 L15,2.015 L15,16.015 L1,16.015 L1,2.015 L4,2.015 L4,0.015 L6,0.015 Z M13,4.015 L3,4.015 L3,14.015 L13,14.015 L13,4.015 Z M11,10.015 L11,12.015 L9,12.015 L9,10.015 L11,10.015 Z M7,10.015 L7,12.015 L5,12.015 L5,10.015 L7,10.015 Z M11,6.015 L11,8.015 L9,8.015 L9,6.015 L11,6.015 Z M7,6.015 L7,8.015 L5,8.015 L5,6.015 L7,6.015 Z" id="形状结合" fill="#00A4FF" fill-rule="nonzero"></path>
+    </g>
+</svg>
