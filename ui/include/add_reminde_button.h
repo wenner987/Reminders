@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QMouseEvent>
 #include <QLabel>
+#include <QListView>
 
 class AddReminderButton: public QWidget
 {
@@ -32,8 +33,9 @@ protected:
 private:
     QLabel* no_rember_;
     QLabel* title_;
+    QListView* notice_list_view_;
 
-
+    void AddListItem();
 };
 
 #endif // ADDREMINDERBUTTON_H

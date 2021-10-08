@@ -1,11 +1,18 @@
 #include <QPainter>
+#include <QStandardItemModel>
+
+#include "rem_utils.h"
+
 #include "ui/include/add_reminde_button.h"
+#include "ui/include/notice_view.h"
 
 AddReminderButton::AddReminderButton(QWidget* parent): QWidget(parent)
 {
 //    this->resize(parent->width(), parent->height());
+    this->notice_list_view_ = new QListView{this};
     this->GenNoReminbers();
     this->GenTitle();
+    this->AddListItem();
 }
 
 AddReminderButton::~AddReminderButton() {
@@ -62,4 +69,17 @@ void AddReminderButton::ChangeToScheduled() {
     palette.setColor(QPalette::WindowText, QColor{255, 57, 47});
     this->setPalette(palette);
     this->title_->setText("Scheduled");
+}
+
+void AddReminderButton::AddListItem() {
+    QStandardItemModel* model = Util::GetUtil()->GetNoticeModel();
+    for (int i = 0; i < 10; ++i) {
+        NoticeItemData d;
+//        model->appendRow()
+    }
+
+    NoticeDelegate* delegate = new NoticeDelegate{this};
+
+    this->notice_list_view_->setItemDelegate(delegate);
+    this->notice_list_view_->setModel(model);
 }

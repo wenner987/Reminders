@@ -24,7 +24,7 @@ FILE(GLOB HDRS "./ui/include/*.h")
 FILE(GLOB UI_SRCS "./src/*.cpp")
 FILE(GLOB UI_HDRS "./include/*.h")
 
-set(PROJECT_SOURCES ${SRCS} ${HDRS} ${UI_SRCS} ${UI_HDRS} ui/include/card_widget.h ui/src/card_widget.cpp)
+set(PROJECT_SOURCES ${SRCS} ${HDRS} ${UI_SRCS} ${UI_HDRS} ui/include/card_widget.h ui/src/card_widget.cpp src/rem_utils.cpp ui/src/notice_item.cpp ui/include/notice_item.h)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(rem
